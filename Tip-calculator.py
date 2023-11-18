@@ -1,0 +1,10 @@
+#A simple calculator helping to calculate the tip at a restaurant or cafe.
+bill = input("How much is your bill?£")
+people = input("How many people are splitting the bill?")
+tip_per = input("What percentage do you want to tip?")
+bill = (float(bill))
+people = (int(people))
+tip_per = (float(tip_per))
+total = (float(bill / people) * (tip_per / 100 + 1))
+rounded_total = "{:.2f}".format(total)
+print(f"You must each pay £{rounded_total} in total!")
